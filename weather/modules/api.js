@@ -1,6 +1,6 @@
 //the api key is generated from openweathermap
 
-const API_KEY = "9795a61f7441bea29ce2cce5edcd0267";
+const API_KEY = "############*********##**#"; //this is not a real api key
 
 export async function fetchWeather(city) {
   try {
