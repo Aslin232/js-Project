@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-left">
+        <a href="#">Home</a>
+        <a href="#">contact</a>
+        <a href="#">About</a>
+      </div>
+      <div class="nav-right">
+        <button id="menuBtn" class="menu-btn">☰</button>
+
+        <div id="dropdownmenu" class="dropdown hidden">
+          <button class="filter-btn" data-filter="men">Men</button>
+          <button class="filter-btn" data-filter="women">Women</button>
+          <button class="filter-btn" data-filter="girl">Girl</button>
+          <button class="filter-btn" data-filter="boy">Boy</button>
+          <button class="filter-btn" data-filter="cat">Cat</button>
+          <button class="filter-btn" data-filter="dog">Dog</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="carousel-container">
+        <div id="carouselTrack" class="carousel-track"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
