@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analog-clock {
+  width: 260px;
+  height: 260px;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle, #1c1c1c, #000);
+  box-shadow: 0 0 20px rgba(105, 182, 182, 0.4),
+    inset 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.numbers {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.numbers span {
+  position: absolute;
+  margin-left: 125px;
+  margin-top: 125px;
+  transform: rotate(calc(30deg * var(--i))) translateY(-110px)
+    rotate(calc(-30deg * var(--i)));
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hand {
+  position: absolute;
+  transform-origin: bottom;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.hour {
+  height: 60px;
+  width: 6px;
+  background: gold;
+  box-shadow: 0 0 10px gold;
+}
+
+.minute {
+  height: 90px;
+  width: 4px;
+  background: cyan;
+  box-shadow: 0 0 10px cyan;
+}
+
+.second {
+  height: 100px;
+  width: 2px;
+  background: red;
+  box-shadow: 0 0 15px red;
+}
+
+.center-dot {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px white;
+}
+
+/* Digital Clock */
+.digital-clock {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px cyan;
+}
+.digital-date {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px cyan;
+}
