@@ -11,7 +11,7 @@ function updateClock() {
   ).textContent = `${hours}:${minutes}:${seconds}`;
 
   const options = {
-    weekDay: "long",
+    weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
