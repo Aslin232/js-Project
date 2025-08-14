@@ -23,7 +23,7 @@ function updateClock() {
 
   const secondDeg = (now.getSeconds() / 60) * 360;
   const minuteDeg = ((now.getMinutes() + now.getSeconds() / 60) / 60) * 360;
-  const hourDeg = ((now.getHours() % now.getMinutes()) / 60 / 12) * 360;
+  const hourDeg = ((now.getHours() % 12 + now.getMinutes() / 60) / 12) * 360;
   document.getElementById(
     "secondHand"
   ).style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
