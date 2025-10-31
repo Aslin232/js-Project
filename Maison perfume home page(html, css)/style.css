@@ -1,0 +1,769 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.top {
+  width: 100%;
+  height: 600px;
+  background: black;
+}
+
+.content1 {
+  width: 100%;
+  height: 9760px;
+  display: flex;
+  flex-direction: column;
+  background: gray;
+}
+.content2 {
+  width: 100%;
+  height: 640px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content2 p {
+  color: gray;
+}
+
+.deer-img {
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
+}
+.perfume-img {
+  width: 740px;
+  position: absolute;
+  top: 70px;
+}
+.head {
+  width: 78%;
+  height: 120px;
+  display: flex;
+  position: relative;
+  margin-left: 150px;
+  z-index: 1;
+  border-bottom: 1px dashed rgb(47, 46, 46);
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 200px;
+}
+.middle {
+  display: flex;
+  height: 120px;
+  margin-left: 50px;
+  align-items: center;
+  gap: 55px;
+}
+.middle h3 {
+  margin: 0;
+}
+.des {
+  color: white;
+  align-items: end;
+
+  display: flex;
+  top: 62px;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+}
+.selecter {
+  margin-top: 25px;
+
+  height: 25px;
+}
+
+.des h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.btn {
+  width: 130px;
+
+  height: 50px;
+  border: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.content1 {
+  background-image: url(https://img.freepik.com/free-photo/white-blank-background-texture-design-element_53876-105854.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  display: flex;
+}
+
+.perfume-logo {
+  background: white;
+  width: 1270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 230px;
+  align-items: center;
+  margin-top: 120px;
+  gap: 36px;
+  height: 420px;
+}
+
+.perfume-img2 {
+  width: 100px;
+  position: absolute;
+  left: -10px;
+  position: relative;
+
+  top: 80px;
+}
+
+.middle-content2 {
+  width: 100%;
+}
+.perfume-image-container {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  gap: 10px;
+}
+.perfume1-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfume1,
+.perfume2,
+.perfume3,
+.perfume4 {
+  width: 309px;
+  box-shadow: 0 0 20px #f5965f;
+
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  margin: 12px;
+  flex-direction: column;
+
+  height: 1100px;
+}
+.perfume1-img:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.perfume2-img:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.perfume3-img:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.perfume4-img:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.perfume1-img,
+.perfume2-img {
+  margin-top: 80px;
+  width: 300px;
+
+  height: 350px;
+}
+.perfume3-img {
+  margin-top: 110px;
+  width: 300px;
+  height: 310px;
+}
+
+.perfume4-img {
+  margin-top: 80px;
+  width: 320px;
+  height: 350px;
+}
+
+.leftside {
+  width: 300px;
+  height: 500px;
+  color: black;
+}
+
+.btn-view {
+  background: #008de4;
+  border: none;
+  color: white;
+  padding: 15px 25px 15px 25px;
+  position: relative;
+  top: 110px;
+  left: 85px;
+  transition: 0 ease;
+  border-radius: 2px;
+}
+.btn-view:hover {
+  background: #f5965f;
+  color: black;
+}
+.perfume-flower-background {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: pink;
+
+  margin-top: 130px;
+}
+.flow-img {
+  width: 650px;
+  height: 450px;
+  position: relative;
+  top: 230px;
+  left: -180px;
+}
+
+.perfume-wood {
+  width: 90%;
+  margin-left: 90px;
+  height: 580px;
+  margin-top: 120px;
+  display: flex;
+  background: #edeff2;
+}
+.wood-img {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 900px;
+  height: 520px;
+}
+.mirror1 {
+  margin-top: 200px;
+}
+
+.perfume-option {
+  width: 100%;
+  height: 1330px;
+}
+
+.perfume-flower {
+  width: 90%;
+  margin-left: 90px;
+  gap: 80px;
+  margin-top: 131px;
+  display: flex;
+  height: 780px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.learn-more {
+  width: 76%;
+  height: 740px;
+  background: white;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 110px;
+}
+
+.why {
+  width: 100%;
+  height: 450px;
+  background: black;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  display: flex;
+  margin-top: 120px;
+}
+
+.features {
+  width: 100%;
+  height: 700px;
+  color: rgb(80, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 30px;
+  background: #e9e9e9;
+}
+
+.here {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+
+  color: rgb(80, 78, 78);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
+}
+.here h2 {
+  color: blue;
+}
+
+.experience {
+  width: 80%;
+  border-radius: 20px;
+  height: 490px;
+  align-items: center;
+  display: flex;
+  margin-left: 170px;
+  margin-top: 100px;
+  background: #f8bb98;
+}
+
+.perfume-select1,
+.perfume-select2,
+.perfume-select3,
+.perfume-select4 {
+  background: white;
+  box-shadow: 0 0 20px #f5965f;
+  width: 500px;
+  height: 1040px;
+}
+
+.perfume-select {
+  display: flex;
+  gap: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 170px;
+}
+
+.text-line {
+  width: 600px;
+
+  color: black;
+  height: 130px;
+}
+
+.imgss,
+.imgss2,
+.imgss3 {
+  width: 60px;
+  height: 50px;
+}
+
+.div-3 {
+  width: 78%;
+  height: 1000px;
+  display: flex;
+  gap: 40px;
+}
+
+.div-no1,
+.div-no2,
+.div-no3 {
+  width: 480px;
+  margin: 12px;
+  padding: 24px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 36px;
+
+  height: 940px;
+  background: white;
+}
+.mid-div-img {
+  width: 200px;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.for-dash {
+  display: flex;
+  color: white;
+
+  width: 75%;
+  height: 540px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px dashed rgb(57, 55, 55);
+}
+
+.left-div,
+.middle-div,
+.right-div {
+  width: 500px;
+  height: 400px;
+}
+
+.middle-div {
+  width: 870px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left-div,
+.right-div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.last {
+  width: 75%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-div {
+  margin-bottom: 100px;
+}
+
+.right-div p {
+  color: white;
+}
+
+.exp-img {
+  width: 420px;
+}
+
+.mini-exp {
+  margin-left: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+  width: 90%;
+  height: 400px;
+  display: flex;
+}
+
+.left-exp {
+  color: white;
+}
+.view-btn {
+  padding: 18px 30px;
+  position: relative;
+  right: -140px;
+  top: -240px;
+  background: #008de4;
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+.view-btn:hover {
+  background: white;
+  color: black;
+}
+.qual-per-img {
+  width: 700px;
+}
+
+.qual-div,
+.qual-div2,
+.qual-div3 {
+  border-bottom: 2px solid black;
+
+  height: 150px;
+}
+
+.why-img {
+  width: 1000px;
+}
+
+.why-left {
+  font-size: 18px;
+  line-height: 35px;
+  margin-left: 80px;
+}
+
+.left-learn {
+  background: white;
+  width: 410px;
+}
+
+.right-learn {
+  background: black;
+  color: white;
+  width: 510px;
+}
+
+.sp-img {
+  width: 130px;
+}
+
+.cent-img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+
+  top: 102px;
+  left: 440px;
+}
+.left-learn {
+  padding-left: 20px;
+}
+
+.flow-per-img {
+}
+
+.buy-btn {
+  padding: 17px 60px;
+  border: none;
+  color: white;
+  margin-left: 300px;
+  margin-top: 20px;
+  background: black;
+}
+.buy-btn:hover {
+  background: #f5965f;
+  color: black;
+}
+.perfume-select1,
+.perfume-select2,
+.perfume-select3,
+.perfume-select4 {
+  padding: 32px;
+
+  margin: 12px;
+}
+
+.per-sel-img1:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.per-sel-img2:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.per-sel-img3:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.per-sel-img4:hover {
+  box-shadow: 0 0 20px #f5965f;
+}
+.per-sel-img1 {
+  width: 280px;
+}
+.per-sel-img2 {
+  width: 340px;
+}
+.per-sel-img3 {
+  width: 290px;
+}
+.per-sel-img4 {
+  width: 320px;
+  height: 320px;
+}
+
+.div-sel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spn {
+  display: flex;
+  position: relative;
+  margin-left: 55px;
+  color: rgb(51, 50, 50);
+  line-height: 40px;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.spn p {
+  margin: 0;
+}
+
+.btn-btn {
+  padding: 16px 25px 16px 25px;
+  background: #008de4;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  position: relative;
+
+  left: 100px;
+}
+
+.btns {
+  bottom: -110px;
+}
+.btns1 {
+  bottom: -150px;
+}
+.btns2 {
+  bottom: -200px;
+}
+.btns3 {
+  bottom: -180px;
+}
+.perfume-option h1 {
+  color: #fed8c2;
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.perfume-select1 div {
+  margin-top: 80px;
+}
+.perfume-select2 div {
+  margin-top: 80px;
+}
+.perfume-select3 div {
+  margin-top: 80px;
+}
+.perfume-select4 div {
+  margin-top: 80px;
+}
+
+.ho {
+  color: #fed8c2;
+  text-align: center;
+  font-size: 25px;
+}
+.ho:hover {
+  color: #f0af89;
+}
+.pri {
+  font-size: 20px;
+  cursor: pointer;
+}
+.pri:hover {
+  color: #f5965f;
+}
+
+.per-flow-div {
+  width: 1050px;
+  display: flex;
+  height: 460px;
+
+  position: relative;
+  gap: 30px;
+  top: 60px;
+  right: 340px;
+}
+.per-img-bot {
+  width: 410px;
+  height: 400px;
+  position: absolute;
+  bottom: -43px;
+  right: 40px;
+  z-index: 1;
+}
+
+.per-img-bot2 {
+  width: 340px;
+  height: 300px;
+  position: absolute;
+  left: -90px;
+  top: -5px;
+  z-index: 2;
+}
+.adj {
+  margin-top: 250px;
+  padding-left: 30px;
+  width: 600px;
+  height: 130px;
+  border-left: 5px solid white;
+}
+.blog-heading {
+  color: white;
+}
+
+.blog-heading:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 15px;
+}
+.custom-select {
+  position: relative;
+  width: 220px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+  border: none;
+  color: white;
+}
+.custom-select {
+  position: relative;
+  width: 130px;
+  height: 15px;
+  margin-bottom: 20px;
+  background: black;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+}
+
+.selected {
+  position: relative;
+  display: flex;
+}
+.flag-img {
+  width: 20px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #555;
+  transform: translateY(-50%);
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  border-top: none;
+  display: none;
+  color: white;
+  background: black;
+}
+
+.custom-select:hover .options {
+  display: block;
+}
+
+.options li {
+  padding: 10px;
+  border-bottom: 1px dashed rgb(89, 86, 86);
+}
+
+.options li:hover {
+  background: black;
+  color: orange;
+  border-bottom: 1px dashed rgb(89, 86, 86);
+}
+
+.img-flag {
+  margin-top: 5px;
+}

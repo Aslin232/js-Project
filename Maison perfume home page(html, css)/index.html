@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="top">
+      <img
+        src="https://themaison-alhambra.com/wp-content/uploads/2025/01/hero.jpeg"
+        alt="img"
+        class="perfume-img"
+      />
+      <div class="head">
+        <img
+          src="https://themaison-alhambra.com/wp-content/uploads/2025/01/alhamra_logo-white.png"
+          alt="img"
+          class="deer-img"
+        />
+        <div class="middle">
+          <span style="border-bottom: 2px solid orange"
+            ><h4 style="color: orange; margin-bottom: 10px">HOME</h4></span
+          >
+          <span style="margin-top: 10px">
+            <h4 class="blog-heading">BLOG</h4></span
+          >
+          <span style="margin-top: 10px">
+            <h4 class="blog-heading">ABOUT</h4></span
+          >
+
+          <div class="selecter" style="border-bottom: 2px solid orange">
+            <div class="custom-select">
+              <div class="selected">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII="
+                  alt="img"
+                  class="flag-img"
+                />
+                <p style="margin: 0; color: orange">ENGLISH</p>
+              </div>
+              <ul class="options">
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEX09PTy8fHy6+vm5+b+/v77+/v29vbf39/5vLz5fHz6qqr6UFD7QUH5NDT3lZXa2tr419f3JibT09P2WloskN4YAAAAVUlEQVR4AQXBQU7FMBBAMb90hCoW3P+csCAKfIodIBIyQJAGmPQTDHgrzca94K/keT/nWOgjmdm4VvIpwy1GXOsZ9ndYYL/Wee3IRI/fr4PQCuPmAv/RTRUh24Q4UgAAAABJRU5ErkJggg=="
+                    alt="img"
+                    class="flag-img img-flag"
+                  />
+
+                  日本語
+                </li>
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC"
+                    alt="img"
+                    class="flag-img img-flag"
+                  />
+
+                  Deutsch
+                </li>
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg=="
+                    alt="img"
+                    class="flag-img img-flag"
+                  />
+
+                  Français
+                </li>
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAUVBMVEUAiQAAgADk5OTe3t7vAAB3yXf9/f36+vr5Vlb3RkZjwWNYvVj4+Pj1MzP1KChQuFD1GxviAABHtUf19fXzDw4/sT8AcAA2qzYAWgDLy8vDw8ObXclsAAAAVElEQVR4AQXBSwoCQRQEsNT70CC69P5XdCUMA2ISSAiBWAQScg8bN7GJWxFDrCivwhCLMipGx3LKUOi2HAZluy2HgXprxQGfGL6G63B5MJ5FCD/4A3DaCLvbBle5AAAAAElFTkSuQmCC"
+                    alt="img"
+                    class="flag-img img-flag"
+                  />
+
+                  Italiano
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="des">
+        <h1 style="font-size: 45px">Maison Alhambra</h1>
+        <h1 style="font-size: 45px; margin-top: 20px; margin-bottom: 30px">
+          – Luxury Perfumes Inspired by Tradition
+        </h1>
+        <p style="font-size: 20px; line-height: 35px">
+          Step into the world of Maison Alhambra, where timeless Eastern
+          traditions meet modern sophistication. Explore <br />an exquisite
+          collection of over 200 unique fragrances crafted for those who value
+          quality, artistry, and elegance.
+        </p>
+        <button class="btn">EXPLORE</button>
+      </div>
+    </header>
+    <div class="content1">
+      <div class="perfume-logo">
+        <span>
+          <img
+            src="perfume-bottle-vector-icon1_733406-835.png"
+            alt="img"
+            class="perfume-img2"
+          />
+        </span>
+        <span>
+          <p
+            style="
+              margin: 0;
+              text-align: center;
+              font-size: 24px;
+              margin-top: 80px;
+              color: grey;
+            "
+          >
+            we bring you a curated selection of premium perfumes designed to
+          </p>
+          <p
+            style="
+              text-align: center;
+              font-size: 24px;
+              margin: 0;
+              margin-top: 10px;
+              color: grey;
+            "
+          >
+            elevate your senses and leave a lasting impression.
+          </p></span
+        >
+      </div>
+      <div class="middle-content2">
+        <h1
+          style="
+            margin-top: 130px;
+            text-align: center;
+            margin-bottom: 90px;
+            font-size: 35px;
+          "
+        >
+          Popular Maison Alhambra Perfumes – Top Fragrances You’ll Love
+        </h1>
+        <div class="perfume-image-container">
+          <div class="perfume1">
+            <div class="perfum1-center">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2024/06/Maison-Alhambra-Bright-Peach.jpg"
+                alt="img"
+                class="perfume1-img"
+              />
+              <h2 class="ho">Maison Alhambra Bright <br />Peach</h2>
+            </div>
+
+            <div class="leftside">
+              <p>Top notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                  ><i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Peach,Blood Orange&Green <br />Leaves</p></span
+                >
+              </span>
+
+              <p>Middle notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Patchouli</p>
+                </span>
+              </span>
+              <p>Base notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Honey & Cognac</p></span
+                >
+              </span>
+              <button class="btn-view">View product</button>
+            </div>
+          </div>
+          <div class="perfume2">
+            <div class="perfume2-center">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2024/06/Maison-Alhambra-Infini-Rose-for-Unisex.jpg"
+                alt="img"
+                class="perfume2-img"
+              />
+              <h2 class="ho">Maison Alhambra Infini <br />Rose for Unisex</h2>
+            </div>
+            <div class="leftside">
+              <p>Top notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                  ><i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Peach,Blood Orange&Green <br />Leaves</p></span
+                >
+              </span>
+
+              <p>Middle notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Patchouli</p>
+                </span>
+              </span>
+              <p>Base notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Honey & Cognac</p></span
+                >
+              </span>
+              <button class="btn-view">View product</button>
+            </div>
+          </div>
+
+          <div class="perfume3">
+            <div class="perfume3-center">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2024/06/Maison-Alhambra-Victorioso-Victory-for-Men-600x597.jpg"
+                alt="img"
+                class="perfume3-img"
+              />
+              <h2 class="ho">Maison Alhambra <br />Victorioso for Men</h2>
+            </div>
+            <div class="leftside">
+              <p>Top notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                  ><i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Peach,Blood Orange&Green <br />Leaves</p></span
+                >
+              </span>
+
+              <p>Middle notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Patchouli</p>
+                </span>
+              </span>
+              <p>Base notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Honey & Cognac</p></span
+                >
+              </span>
+              <button class="btn-view">View product</button>
+            </div>
+          </div>
+          <div class="perfume4">
+            <div class="perfume4-center">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2024/06/Lovely-Cherie-600x600.jpg"
+                alt="img"
+                class="perfume4-img"
+              />
+              <h2 class="ho">
+                Maison Alhambra Lovely <br />
+                Cherie
+              </h2>
+            </div>
+
+            <div class="leftside">
+              <p>Top notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                  ><i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Peach,Blood Orange&Green <br />Leaves</p></span
+                >
+              </span>
+
+              <p>Middle notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Patchouli</p>
+                </span>
+              </span>
+              <p>Base notes</p>
+              <span>
+                <span
+                  style="
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    line-height: 30px;
+                  "
+                >
+                  <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+                  <p>Honey & Cognac</p></span
+                >
+              </span>
+              <button class="btn-view">View product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="perfume-flower-background">
+        <img src="images-removebg-preview.png" alt="img" class="per-img-bot2" />
+        <img src="imagess-removebg-preview.png" alt="img" class="per-img-bot" />
+        <img
+          src="three-pink-roses-free-photo-removebg-preview.png"
+          alt="img"
+          class="flow-img"
+        />
+        <div class="per-flow-div">
+          <div>
+            <p style="font-size: 16px">Welcome to</p>
+            <h1 style="color: #008de4">
+              Maison Alhambra Perfume <br />website
+            </h1>
+            <h3>Where luxury meets artistry in the world of fragrances.</h3>
+          </div>
+          <div class="adj">
+            <p>
+              Maison Alhambra is renowned for crafting high-quality perfumes
+              that <br />capture the essence of sophistication and elegance. As
+              Maison Alhambra <br />website, we proudly offer a diverse
+              collection of premium fragrances that <br />blend timeless
+              tradition with modern innovation. Explore Maison Alhambra
+              <br />store to discover your next signature fragrance, created for
+              those who <br />appreciate the finer things in life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="perfume-wood">
+        <img
+          src="https://skinsense.sg/wp-content/uploads/2025/02/145215.jpg"
+          alt="img"
+          class="wood-img"
+        />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 36px;
+          "
+        >
+          <h1 style="text-align: center; font-size: 37px">
+            Best Men’s Fragrances by <br />Maison Alhambra
+          </h1>
+          <p
+            style="
+              font-size: 20px;
+              color: rgb(121, 117, 117);
+              text-align: center;
+            "
+          >
+            Discover the top-rated men’s perfumes from Maison <br />Alhambra —
+            where luxury meets affordability. Designed for <br />the modern man,
+            these long-lasting and versatile scents are <br />
+            perfect for both everyday wear and special occasions.
+          </p>
+        </div>
+      </div>
+      <div class="perfume-option">
+        <div class="perfume-select">
+          <div class="perfume-select1">
+            <div class="div-sel">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2025/04/%D0%BE%D0%BF%D0%B8%D1%81-%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D1%83-%D0%BF%D0%BB%D1%8E%D1%81%D0%B8-%D0%BC%D1%96%D0%BD%D1%83%D1%81%D0%B8-%D0%BE%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%96-%D0%B0%D0%BD%D0%B3%D0%BB-%D1%96-%D0%B1%D0%B5%D0%B7-%D1%96%D0%BA%D0%BE%D0%BD%D0%BE%D0%BA.jpg"
+                alt="img"
+                class="per-sel-img1"
+              />
+              <h1 class="ho">Tobacco Touch by Maison <br />Alhambra for Men</h1>
+            </div>
+            <p style="color: rgb(75, 75, 75)">Top notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Spices, Tobacco Leaf</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Middle notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Vanilla, Tonka Bean, Cacao</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Base notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Dried Fruits, Woody Notes, <br />Cinnamon</p></span
+            >
+
+            <button class="btn-btn btns3 btn-view">View product</button>
+          </div>
+          <div class="perfume-select2">
+            <div class="div-sel">
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2025/06/Glacier-Le-Noir-by-Maison-Alhambra-for-Men.jpg"
+                alt="img"
+                class="per-sel-img2"
+              />
+              <h1 style="margin-top: 10px" class="ho">
+                Glacier Le Noir by Maison <br />Alhambra for Men
+              </h1>
+            </div>
+            <p style="color: rgb(75, 75, 75)">Top notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Citrus, Mint, Green Notes</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Middle notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Pepper, Lavender, Spices</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Base notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Cedarwood, Amber, Musk</p></span
+            >
+            <button class="btn-btn btns2 btn-view">View product</button>
+          </div>
+          <div class="perfume-select3">
+            <div>
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2025/06/Salvo-by-Maison-Alhambra-for-Men.jpg"
+                alt="img"
+                class="per-sel-img3"
+              />
+              <h1 style="margin-top: 30px" class="ho">
+                Salvo by Maison Alhambra <br />for Men
+              </h1>
+            </div>
+
+            <p style="color: rgb(75, 75, 75)">Top notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Bergamot, Black Pepper</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Middle notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Lavender, Patchouli, Geranium</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Base notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>
+                Ambroxan, Cedarwood,<br />
+                Labdanum
+              </p></span
+            >
+
+            <button class="btn-btn btns1 btn-view">View product</button>
+          </div>
+          <div class="perfume-select4">
+            <div>
+              <img
+                src="https://themaison-alhambra.com/wp-content/uploads/2025/06/Maison-Alhambra-Avant-Eau-De-Parfum-Spray-for-Men.jpg"
+                alt="img"
+                class="per-sel-img4"
+              />
+              <h1 style="margin-top: 30px" class="ho">
+                Maison Alhambra Avant <br />Eau De Parfum Spray for <br />Men
+              </h1>
+            </div>
+
+            <p style="color: rgb(75, 75, 75)">Top notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Grapefruit, Lemon, Mint, Pink <br />Pepper</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Middle notes</p>
+            <span class="spn"
+              ><i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>Ginger, Nutmeg, Jasmine</p></span
+            >
+
+            <p style="color: rgb(75, 75, 75)">Base notes</p>
+            <span class="spn">
+              <i class="fa-solid fa-spray-can" style="color: #f4dbcd"></i>
+              <p>
+                Incense, Vetiver, Cedar,<br />
+                Sandalwood
+              </p></span
+            >
+
+            <button class="btn-btn btns btn-view">View product</button>
+          </div>
+        </div>
+      </div>
+      <div class="perfume-flower">
+        <div>
+          <h1 style="font-size: 37px; text-align: center">
+            Top Pick: Delilah by Maison Alhambra for <br />
+            Women
+          </h1>
+          <h2 style="text-align: center; color: rgb(65, 62, 62)">
+            Romantic. Feminine. Radiant.
+          </h2>
+          <p
+            style="
+              color: rgb(85, 84, 84);
+              font-size: 20px;
+              line-height: 40px;
+              text-align: center;
+            "
+          >
+            Delilah is a graceful and luminous fragrance that celebrates
+            femininity in its most elegant <br />form. Inspired by Delina, it
+            opens with a bright and juicy blend of lychee, rhubarb, and <br />
+            bergamot, offering a playful yet sophisticated introduction.
+          </p>
+          <p
+            style="
+              color: rgb(85, 84, 84);
+              font-size: 20px;
+              line-height: 40px;
+              text-align: center;
+            "
+          >
+            The heart reveals a floral bouquet of Turkish rose, peony, and lily
+            of the valley, evoking <br />softness and charm. Finally, the base
+            settles into vanilla, musk, and cashmeran, giving the <br />scent
+            warmth and depth that lingers beautifully on the skin.
+          </p>
+          <h3 style="color: rgb(72, 67, 67)">Fragrance Notes:</h3>
+          <ul>
+            <li
+              style="
+                font-size: 20px;
+                color: rgb(100, 99, 99);
+                margin-bottom: 20px;
+              "
+            >
+              <span style="font-size: 20px; color: rgb(0, 0, 0)"
+                >Top Notes:</span
+              >
+              Lychee, Rhubarb, Bergamot
+            </li>
+            <li
+              style="
+                font-size: 20px;
+                color: rgb(100, 99, 99);
+                margin-bottom: 20px;
+              "
+            >
+              <span style="font-size: 20px; color: rgb(0, 0, 0)"
+                >Heart Notes:</span
+              >
+              Turkish Rose, Peony, Lily of the Valley
+            </li>
+            <li style="font-size: 20px; color: rgb(100, 99, 99)">
+              <span style="font-size: 20px; color: rgb(0, 0, 0)"
+                >Base Notes:</span
+              >
+              Vanilla, Musk, Cashmeran
+            </li>
+          </ul>
+          <button class="buy-btn">Buy now</button>
+        </div>
+        <div>
+          <img
+            src="https://themaison-alhambra.com/wp-content/uploads/2025/04/Maison-Alhambra-Delilah-Pour-Femme-Eau-De-Parfum-Spray-for-Women.jpg"
+            alt="img"
+            class="flow-per-img"
+          />
+        </div>
+      </div>
+      <div class="learn-more">
+        <div class="left-learn">
+          <h1 style="font-size: 65px; margin-top: 80px; line-height: 85px">
+            Our Exclusive <br />Perfume <br />Collections
+          </h1>
+          <p
+            style="
+              color: rgb(88, 88, 88);
+              line-height: 30px;
+              font-size: 18px;
+              margin-bottom: 50px;
+            "
+          >
+            At Maison Alhambra, we believe that fragrance is <br />
+            an art form, a powerful expression of <br />individuality and style.
+            Explore our exquisite <br />
+            collection and find the perfect scent to <br />complement your
+            unique personality.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              align-items: center;
+
+              width: 200px;
+            "
+          >
+            <span style="color: #008de4; font-size: 20px; cursor: pointer"
+              >Learn More
+            </span>
+            <span style="cursor: pointer">
+              <i
+                class="fa-solid fa-arrow-right"
+                style="color: #008de4; font-size: 14px"
+              ></i
+            ></span>
+          </div>
+        </div>
+        <div class="right-learn">
+          <p
+            style="
+              margin-left: 290px;
+              font-size: 30px;
+              margin: 0;
+              position: relative;
+              left: 200px;
+              top: 170px;
+            "
+          >
+            “Perfume is an <br />invisible, but <br />unforgettable,<br />
+            unsurpassed fashion <br />
+            accessory. It notifies <br />you when a woman <br />appears and
+            <br />continues to remind <br />you of her when she
+          </p>
+
+          <span
+            style="
+              display: flex;
+              align-items: center;
+              position: relative;
+              left: 200px;
+              top: 170px;
+            "
+          >
+            <p style="font-size: 30px; margin-left: 50px; margin: 0">
+              has left”
+            </p>
+            <img
+              src="https://themaison-alhambra.com/wp-content/uploads/2025/01/alhamra_logo-white.png"
+              alt="img"
+              class="sp-img"
+            />
+          </span>
+        </div>
+        <img
+          src="https://themaison-alhambra.com/wp-content/uploads/2024/06/Maison-Alhambra-collection.jpg"
+          alt="img"
+          class="cent-img"
+        />
+      </div>
+      <div class="why">
+        <div class="why-left">
+          <h1 style="font-size: 35px">Why Choose Maison Alhambra?</h1>
+          <p>
+            At Maison Alhambra, we are dedicated to providing you with the
+            highest quality <br />fragrances that are both luxurious and
+            affordable. Each of our perfumes is crafted with <br />meticulous
+            attention to detail, ensuring that you receive a product that is
+            both exquisite <br />and long-lasting. Whether you are searching for
+            a signature scent or a special gift, our <br />
+            collection has something for everyone.
+          </p>
+        </div>
+        <div class="why-right">
+          <img
+            src="https://themaison-alhambra.com/wp-content/uploads/2025/01/perfume-hand-spraying-perfume-on-2048x866.jpg"
+            alt="img"
+            class="why-img"
+          />
+        </div>
+      </div>
+      <div class="features">
+        <div class="left-qual">
+          <img
+            src="https://themaison-alhambra.com/wp-content/uploads/2025/01/Alhambra-Parfum.jpg"
+            alt="img"
+            class="qual-per-img"
+          />
+        </div>
+        <div class="righ-qual">
+          <div style="border-bottom: 2px solid black" class="text-line">
+            <h1 style="font-size: 40px; margin: 0">
+              Features and Benefits of Maison <br />Alhambra Perfumes
+            </h1>
+          </div>
+          <div class="qual-div">
+            <div>
+              <span style="display: flex; align-items: center; gap: 20px">
+                <img
+                  src="https://rickytan.com.my/wp-content/uploads/2022/11/JC114360_RTNCO_Corporate-05-1024x1024.png"
+                  alt="img"
+                  class="imgss3"
+                />
+
+                <h1>High Quality</h1>
+              </span>
+            </div>
+            <p>
+              Made with premium ingredients, ensuring long-lasting and vibrant
+              fragrances.
+            </p>
+          </div>
+          <div class="qual-div2">
+            <div>
+              <span style="display: flex; align-items: center; gap: 20px">
+                <img
+                  src="icon3.jpeg-removebg-preview.png"
+                  alt="img"
+                  class="imgss"
+                />
+                <h1>Wide Selection</h1></span
+              >
+            </div>
+            <p>
+              With over 200 scents, there’s a perfect fragrance for every mood
+              and occasion.
+            </p>
+          </div>
+          <div class="qual-div3">
+            <div>
+              <span style="display: flex; align-items: center; gap: 20px">
+                <img
+                  src="330572_104280-removebg-preview.png"
+                  alt="img"
+                  class="imgss2"
+                />
+                <h1>Affordability</h1></span
+              >
+            </div>
+            <p>
+              Offers luxurious fragrances at accessible prices, making them a
+              favorite for <br />many.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="here">
+        <h1 style="margin-bottom: 90px; font-size: 40px">
+          Here what our customers have to say
+        </h1>
+        <div class="div-3">
+          <div class="div-no1">
+            <div class="divno-1">
+              <i
+                class="fa-solid fa-quote-right"
+                style="color: #f8bb98; font-size: 55px"
+              ></i>
+            </div>
+            <div>
+              <p>
+                The scent is fresh and long lasting could be a daily driver.
+                It’s smells decent, but I feel like Nautica Voyage smells better
+                and would recommend that over this scent wise. Performance and
+                projection this is a 10 in those areas. It lasts all day and
+                anyone within 2 feet can tell you took a shower today. Scent
+                wise is very disappointing, I’d rate it a 5.5. Will update in a
+                month after the summer heat sets in.
+              </p>
+              <p>
+                Revisiting this cologne: I had to let it sit for a couple weeks.
+                I either got used to it or letting it sit on the shelf made it
+                better. I’m all in, will purchase again. It’s been said it that
+                it’s an Invictus Victory clean, if smelling super clean all day
+                long is Invictus then this dose just that.
+              </p>
+              <h2 style="margin-top: 100px; margin-bottom: 20px; color: black">
+                Eze
+              </h2>
+              <p>Victorioso</p>
+            </div>
+          </div>
+          <div class="div-no2">
+            <i
+              class="fa-solid fa-quote-right"
+              style="color: #f8bb98; font-size: 55px"
+            ></i>
+            <p>
+              Smells very close to AS and lasts a long time! It’s like a boozy
+              cinnamon apple pie. This is a strong perfume so if you spray more
+              than twice you’re going to leave a scent trail. That can be a good
+              or a bad thing depending on where you’re wearing it. This is
+              definitely a fall/winter scent because it’s very warm and sweet.
+              This isn’t something I would wear in the summertime. I prefer this
+              over Kramrah because of the complexity and depth of the scent.
+            </p>
+            <h2 style="margin-top: 100px; color: black">Cameron Skye</h2>
+            <p>KISMET ANGEL</p>
+          </div>
+          <div class="div-no3">
+            <i
+              class="fa-solid fa-quote-right"
+              style="color: #f8bb98; font-size: 55px"
+            ></i>
+            <p>
+              I have never smelled the original, but I have watched multiple
+              videos on YouTube where they said it smells 90% like the original.
+              That was the reason I purchased the cologne. I loved it as soon as
+              I smelled it, but I was disappointed that the performance is very
+              weak. It lasts about 3–4 hours. So, unless you’re going to dinner
+              for a few hours and put on the cologne right as you leave the
+              house, the smell won’t last for the entire occasion. Other than
+              that, the smell is very pleasant. If you like tobacco smell, you
+              are going to love this smell. It is more of an elegant and
+              sophisticated smell, so I would only wear it when my outfit is
+              also sharp.
+            </p>
+            <h2 style="margin-top: 100px; color: black">Hridoy Ahmad</h2>
+            <p>Tobacco Touch</p>
+          </div>
+        </div>
+      </div>
+      <div class="experience">
+        <div class="mini-exp">
+          <div class="left-exp">
+            <h1 style="font-size: 40px; line-height: 50px">
+              Experience the Luxury of Maison <br />Alhambra Perfumes
+            </h1>
+            <p style="font-size: 20px; line-height: 33px">
+              Discover your signature scent today. Explore our exquisite
+              collection of <br />premium fragrances designed to captivate and
+              inspire. Whether you prefer <br />the fresh and vibrant notes of
+              Bright Peach or the timeless elegance of Infini <br />Rose, Maison
+              Alhambra has the perfect perfume for you.
+            </p>
+          </div>
+
+          <div class="right-exp">
+            <img
+              src="https://themaison-alhambra.com/wp-content/uploads/2024/06/snapedit_1719485915981.png"
+              alt="img"
+              class="exp-img"
+            />
+            <button class="view-btn">View product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="content2">
+      <div class="for-dash">
+        <div class="left-div">
+          <h1>Useful information</h1>
+          <p style="line-height: 30px; font-size: 17px">
+            TheMaison-Alhambra.com is part of the <br />Amazon Services LLC
+            Associates Program,<br />
+            an affiliate advertising program designed <br />to allow sites to
+            earn advertising fees by <br />linking to Amazon.com.
+          </p>
+        </div>
+        <div class="middle-div">
+          <img
+            src="https://themaison-alhambra.com/wp-content/uploads/2025/01/alhamra_logo-white-600x410.png"
+            alt="alt"
+            class="mid-div-img"
+          />
+          <p style="line-height: 25px; text-align: center; font-size: 17px">
+            Maison Alhambra is a rising perfume brand that has quickly gained
+            popularity among <br />
+            fragrance enthusiasts. Known for its sophisticated scents, the brand
+            combines <br />
+            modern trends with the richness of traditional Eastern
+            perfume-making.
+          </p>
+        </div>
+        <div class="right-div">
+          <h1>Quick Links</h1>
+          <p style="margin: 0; margin-bottom: 10px">FAQs</p>
+          <p style="margin: 0; margin-bottom: 10px">
+            How to properly use perfumes
+          </p>
+          <p style="margin: 0">Reviews</p>
+        </div>
+      </div>
+      <div class="last">
+        <p style="font-size: 13px; margin-top: 25px">
+          Copyright © 2025 - WordPress Theme
+        </p>
+        <p class="pri">Privacy policy</p>
+      </div>
+    </footer>
+  </body>
+</html>
